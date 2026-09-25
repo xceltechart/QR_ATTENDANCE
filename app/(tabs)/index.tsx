@@ -27,6 +27,8 @@ export default function Index() {
       >
         <View style={[styles.layout, desktop && styles.desktopLayout]}>
           <View style={[styles.hero, desktop && styles.desktopHero]}>
+            <View pointerEvents="none" style={styles.glowViolet} />
+            <View pointerEvents="none" style={styles.glowCyan} />
             <View style={styles.brandRow}>
               <View style={styles.logoCircle}>
                 <MaterialIcons name="school" size={30} color={COLORS.primary} />
@@ -50,7 +52,7 @@ export default function Index() {
               <View style={styles.statusDot} />
               <Text style={styles.statusText}>Cloud attendance is ready</Text>
             </View>
-            <Text style={styles.credit}>Developed by Mhyko Codeniera</Text>
+            <Text style={styles.credit}>Developed by Axcel Delos Reyes</Text>
           </View>
 
           <View style={[styles.actionCard, desktop && styles.desktopActionCard]}>
@@ -102,6 +104,24 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   desktopHero: { flex: 1, minHeight: 450, padding: 40, justifyContent: 'center' },
+  glowViolet: {
+    position: 'absolute',
+    top: -80,
+    right: -50,
+    width: 250,
+    height: 250,
+    borderRadius: 125,
+    backgroundColor: 'rgba(139, 92, 246, 0.35)',
+  },
+  glowCyan: {
+    position: 'absolute',
+    bottom: -90,
+    left: -40,
+    width: 280,
+    height: 280,
+    borderRadius: 140,
+    backgroundColor: 'rgba(94, 234, 212, 0.14)',
+  },
   brandRow: { flexDirection: 'row', alignItems: 'center', marginBottom: 36 },
   logoCircle: {
     width: 56,

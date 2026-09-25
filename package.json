@@ -2,6 +2,7 @@
   "name": "qr-att",
   "main": "expo-router/entry",
   "version": "1.0.0",
+  "author": "Axcel Delos Reyes",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",

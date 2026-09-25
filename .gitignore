@@ -6,6 +6,7 @@ node_modules/
 .expo/
 dist/
 web-build/
+expo-start*.log
 expo-env.d.ts
 expo-dev.*.log
 
